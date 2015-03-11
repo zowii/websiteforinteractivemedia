@@ -1,10 +1,14 @@
 body{background-color:#ffc539;
 	font-family: futura;
 	padding-left: 30px;
-	
+
 }
 h1{color:#7e4421;
 font-family: Comic Sans MS; }
+
+h2{color:green;
+font-family: Comic Sans MS;
+font-size: 18px; }
 
 #blob {
 	padding: 5px;
