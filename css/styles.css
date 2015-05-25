@@ -1,26 +1,393 @@
-body{background-color:#ffc539;
-	font-family: futura;
-	padding-left: 30px;
+#wrapper{
+	min-width: 600px;
+	max-width: 1160px;
+	margin: 0 auto;
 
 }
-h1{color:#7e4421;
-font-family: Comic Sans MS; }
 
-h2{color:green;
-font-family: Comic Sans MS;
-font-size: 18px; }
 
-#blob {
-	padding: 5px;
-	position:relative;
-	width:auto;
-	
+body{
+
+	background-image:url(../images/sprankles.jpg);
+	background-repeat: repeat;
+	margin:0 auto;
 
 }
-#dolphin {
+
+
+
+#nav a {
+ 	 color: gray;
+  	font-size: 34px;
+  	font-weight: bold;
+  	font-family: 'Amatic SC', bold;
+	padding: 30px;
+  	text-decoration: none;
+  	color: black;
+ }
+
+#nav li {
+  	display: inline-block;
+
+ 
+
+
+}
+
+#nav{
+	height: 50px;
+	background-color: pink;
+	text-align: center;
+}
+
+.bigasspicture {
+ 
+  	height: 200px;
+	background-image: url(../images/lightgrey.jpg);
+	background-size: cover;
+  	margin-top: -32px;
+  	margin-bottom: -20px;
+}
+
+.bigasspicture .container {
+  	position: relative;
+  	top:0px;
+}
+
+.bigasspicture h1 {
+  	color: black;
+  	font-size: 48px;  
+  	font-family: didot;
+  	font-weight: bold;
+  	text-align: center;
+ 	padding-top: 40px;
+}
+
+.bigasspicture p {
+  	font-size: 20px;
+  	color: black;
+  	text-align: center;
+  	font-family: 'Lato', sans-serif;
+}
+
+.entries {
+	background:rgba(255, 255, 255, 0.7);
+	width: 700px;
+	height:2000px;
+	float:center;
 	
-	position:relative;
-	width:auto;
+	position: absolute;
+	padding:10px;
+}
+.entries h1{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 24px;
+
 	}
+.entries h2{
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-size: 10px;
+}
 
+.entries p{
+	font-family: 'Lato', sans-serif;
+}
+.sidebar{
+	background:rgba(255,255,255,0.7);
+	
+	width:400px;
+	float:right;
+	position: relative;
+	padding: 10px;
+}
+
+.sidebar h1 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 24px;
+
+}
+.sidebar p {
+	font-family: 'Lato', sans-serif;
+
+}
+
+.footer {
+	display: inline;
+	background-color: purple;
+	position: relative;
+
+}
+.divider {
+	display:block;
+	margin: auto;
+	content:url(http://goo.gl/hFnAh6);}
+
+
+.textbox { 
+    background: transparent url(http://html-generator.weebly.com/files/theme/input-text-8.png) repeat-x; 
+    border: 1px solid #999; 
+    outline:0; 
+    height:25px; 
+    width: 275px; 
+  } 
+
+  /*start of search box */
+#search, 
+#submit {
+    float: left;
+}
+
+#search {
+    padding: 5px 9px;
+    height: 23px;
+    width: 260px;
+    border: 1px solid #a4c3ca;
+    font: normal 13px 'trebuchet MS', arial, helvetica;
+    background: #f1f1f1;
+    border-radius: 50px 3px 3px 50px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);            
+}
+
+/* ----------------------- */
+
+#submit
+{       
+    background-color: #6cbb6b;
+    background-image: linear-gradient(#95d788, #6cbb6b);
+    border-radius: 3px 50px 50px 3px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7eba7c #578e57 #447d43;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    height: 35px;
+    margin: 0 0 0 10px;
+    padding: 0;
+    width: 90px;
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    color: #23441e;    
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+#submit:hover {       
+    background-color: #95d788;
+    background-image: linear-gradient(#6cbb6b, #95d788);
+}   
+
+#submit:active {       
+    background: #95d788;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;        
+}
+
+#submit::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
+/*end of search box*/
+.endpost h2{
+
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+}
+/* beginning of heart*/
+pre { 
+  position: fixed; width: 48%;
+  top: 30px; bottom: 30px; left: 26%;
+  transition: left 500ms;
+  background-color: #313744; color: #a6c3d4;
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 24px 12px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  box-shadow: 0px 4px 0px 2px rgba(0,0,0,0.1);
+}
+
+
+/* 
+ * Syntax highlighting 
+ * Colors based on Base16 Ocean Dark
+ */
+
+pre em:not(.comment) { font-style: normal; }
+
+.comment       { color: #707e84; }
+.selector      { color: #c66c75; }
+.selector .key { color: #c66c75; }
+.key           { color: #c7ccd4; }
+.value         { color: #d5927b; }
+
+
+/* 
+ * Let's build my little pen heart.
+ */ 
+
+
+/* First, we'll move this s*** over */
+
+pre { left: 50%; }
+
+
+/* Now we can build my heart */
+#heartwrapper{
+  position: relative;
+}
+#heart, #echo { 
+  position: absolute;
+  width: 300px; height: 300px;
+  top: calc(50% - 150px); left: calc(25% - 150px);
+  text-align: center;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+#heart { z-index: 8; }
+#echo  { z-index: 7; }
+
+#heart::before, #heart::after, #echo::before, #echo::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    width: 150px; height: 240px;
+    background: #3fa926;
+    border-radius: 50px 50px 10px 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+
+#heart::before, #echo::before {
+  left: 150px;
+}
+
+#heart::after, #echo::after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+
+
+
+/* It needs some depth  */
+
+#heart::after { 
+  box-shadow:
+    inset -6px -6px 0px 6px rgba(255,255,255,0.1);
+}
+
+#heart::before { 
+  box-shadow:
+    inset 6px 6px 0px 6px rgba(255,255,255,0.1);
+}
+
+@-webkit-keyframes heartbeat {
+  0%   { 
+    -webkit-transform: scale(0.95); 
+            transform: scale(0.95); 
+  }
+  50%  { 
+    -webkit-transform: scale(1.00); 
+            transform: scale(1.00); 
+  }
+  100% { 
+    -webkit-transform: scale(0.95); 
+            transform: scale(0.95); 
+  }
+}
+
+@keyframes heartbeat {
+  0%   { transform: scale(0.95); }
+  50%  { transform: scale(1.00); }
+  100% { transform: scale(0.95); }
+}
+
+@-webkit-keyframes echo {
+  0%   { 
+    opacity: 0.1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% { 
+    opacity: 0;
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+
+@keyframes echo {
+  0%   { 
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  100% { 
+    opacity: 0;
+    transform: scale(1.4);
+  }
+}
+/* Makin it mine. */
+
+#heart i::before {
+  content: 'pen#PwLXXP';
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  top: 35%; left: 0;
+  font-style: normal;
+  color: rgba(255,255,255,0.8);
+  font-weight: 100;
+  font-size: 30px;
+  text-shadow: -1px -1px 0px rgba(0,0,0,0.2);
+}
+#heart, #echo {
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
+  -webkit-animation-timing-function: 
+    cubic-bezier(0, 0, 0, 1.74);
+          animation-timing-function: 
+            cubic-bezier(0, 0, 0, 1.74);
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+#heart { 
+  -webkit-animation-name: heartbeat; 
+          animation-name: heartbeat; 
+}
+#echo { 
+  -webkit-animation-name: echo; 
+          animation-name: echo; 
+}
+
+
+/* 
+ * Ready...           
+ */
+
+#heart, #echo {
+
+/* 
+ * ...set...          
+ */
+  
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  
+/* 
+ * ...beat!        
+ */
+
+  
+}
+  /* end of heart*/
 
